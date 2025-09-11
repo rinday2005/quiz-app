@@ -6,7 +6,7 @@ const Result = ({ score, totalQuestions, onRestart, userAnswers }) => {
       <div className="result-header">
         <h1>Quiz Result</h1>
         <h2>
-          Your score: {score} / {totalQuestions}
+          Your score: {score} / {totalQuestions} ({(score / totalQuestions * 100).toFixed(2)}%)
         </h2>
         <button onClick={onRestart} className="restart-quiz-button">
           Restart Quiz

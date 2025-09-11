@@ -28,5 +28,11 @@
     "options": ["Mars", "Jupiter", "Saturn", "Earth"],
     "correctAnswer": "Jupiter",
     "explanation": "Jupiter is the largest planet in our solar system by mass and volume."
+  },
+  {
+   "question": "Who is the current president of Nigeria?",
+    "options": ["Muhammadu Buhari", "Goodluck Jonathan", "Olusegun Obasanjo", "Bola Ahmed Tinubu"],
+    "correctAnswer": "President Bola Ahmed Tinubu",
+    "explanation": "President Bola Ahmed Tinubu is the current president of Nigeria."
   }
 ]

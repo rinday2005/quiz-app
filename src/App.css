@@ -27,6 +27,10 @@ button {
   width: 50%;
 }
 
+button:hover {
+  background-color: #F0F6FF;
+}
+
 .answer-options {
   display: flex;
   flex-direction: column;

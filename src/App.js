@@ -54,9 +54,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My Quiz</h1>
-      </header>
+      {!quizEnded && (
+        <header className="App-header">
+          <h1>Welcome to My Quiz</h1>
+          {questions.length > 0 && (
+            <p>Total Questions: {questions.length}</p>
+          )}
+        </header>
+      )}
       <main>
         {quizEnded ? (
           <Result score={score} totalQuestions={questions.length} onRestart={restartQuiz} userAnswers={userAnswers} />
