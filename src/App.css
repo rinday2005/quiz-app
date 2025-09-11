@@ -1,11 +1,12 @@
 .App {
   text-align: center;
+  background-color: #F3F4F6;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #F3F4F6;
   padding: 20px;
-  color: white;
+  color: #1F2937;
 }
 
 main {
@@ -13,22 +14,29 @@ main {
 }
 
 button {
-  background-color: #61dafb;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
+  background-color: white;
+  border: 3px solid #D1D5DB;
+  border-radius: 10px;
+  color: black;
+  padding: 20px 32px;
+  text-align: left;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 5px;
   cursor: pointer;
+  width: 100%;
 }
 
 .answer-options {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 button.correct {
@@ -37,6 +45,34 @@ button.correct {
 
 button.incorrect {
   background-color: red;
+}
+
+.result-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1F2937;
+  background-color: #FFFFFF;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.restart-quiz-button {
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  width:25%;
+}
+.review-header {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1F2937;
+  background-color: #FFFFFF;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .explanation {

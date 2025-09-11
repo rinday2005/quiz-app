@@ -55,7 +55,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Quiz App</h1>
+        <h1>Welcome to My Quiz</h1>
       </header>
       <main>
         {quizEnded ? (

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Answer from './Answer';
+import React, { useState } from "react";
+import Answer from "./Answer";
 
 const Question = ({ question, onAnswer }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -15,8 +15,8 @@ const Question = ({ question, onAnswer }) => {
 
   return (
     <div>
-      <h2>{question.question}</h2>
       <div className="answer-options">
+        <h2>{question.question}</h2>
         {question.options.map((option, index) => (
           <Answer
             key={index}
@@ -29,12 +29,12 @@ const Question = ({ question, onAnswer }) => {
         ))}
       </div>
       {/* You can put this back later */}
-    {/*{isAnswered && (
+      {isAnswered && (
         <div className="explanation">
           <h3>Explanation:</h3>
           <p>{question.explanation}</p>
         </div>
-      )}*/}
+      )}
     </div>
   );
 };
