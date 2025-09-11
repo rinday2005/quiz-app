@@ -1,0 +1,28 @@
+
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "question": "What is 2 + 2?",
+    "options": ["3", "4", "5", "6"],
+    "correctAnswer": "4"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
+    "correctAnswer": "Tokyo"
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "options": ["Harper Lee", "J.K. Rowling", "Stephen King", "George Orwell"],
+    "correctAnswer": "Harper Lee"
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Mars", "Jupiter", "Saturn", "Earth"],
+    "correctAnswer": "Jupiter"
+  }
+]
