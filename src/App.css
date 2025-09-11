@@ -35,8 +35,8 @@ button {
   background-color: #FFFFFF;
   border-radius: 20px;
   width: 50%;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 5px auto;
+  padding: 10px;
 }
 
 button.correct {
