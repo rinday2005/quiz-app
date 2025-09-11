@@ -94,3 +94,55 @@ button.incorrect {
 .question-review p {
   margin: 5px 0;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  button {
+    width: 90%; /* Make buttons wider on smaller screens */
+    padding: 15px 20px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .answer-options {
+    width: 95%; /* Make answer options container wider */
+    padding: 8px;
+  }
+
+  .restart-quiz-button {
+    width: 90%; /* Make restart button wider */
+  }
+
+  .review-header {
+    width: 98%; /* Adjust review header width */
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .App-header h1 {
+    font-size: 24px; /* Adjust header font size */
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    width: 100%; /* Full width buttons on very small screens */
+    margin: 4px 0; /* Adjust margin */
+  }
+
+  .answer-options {
+    width: 100%; /* Full width for answer options */
+  }
+
+  .restart-quiz-button {
+    width: 100%; /* Full width for restart button */
+  }
+
+  .review-header {
+    width: 100%; /* Full width for review header */
+    font-size: 16px;
+  }
+
+  .App-header h1 {
+    font-size: 20px; /* Further adjust header font size */
+  }
+}
