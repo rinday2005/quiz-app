@@ -8,6 +8,7 @@ function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [quizEnded, setQuizEnded] = useState(false);
+  const [userAnswers, setUserAnswers] = useState([]);
 
   useEffect(() => {
     fetch('/questions.json')
@@ -16,10 +17,23 @@ function App() {
   }, []);
 
   const handleAnswer = (selectedAnswer) => {
-    const correctAnswer = questions[currentQuestionIndex].correctAnswer;
-    if (selectedAnswer === correctAnswer) {
+    const currentQuestion = questions[currentQuestionIndex];
+    const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+
+    if (isCorrect) {
       setScore(score + 1);
     }
+
+    setUserAnswers([
+      ...userAnswers,
+      {
+        question: currentQuestion.question,
+        selectedAnswer: selectedAnswer,
+        correctAnswer: currentQuestion.correctAnswer,
+        explanation: currentQuestion.explanation,
+        isCorrect: isCorrect,
+      },
+    ]);
 
     setTimeout(() => {
       const nextQuestionIndex = currentQuestionIndex + 1;
@@ -35,6 +49,7 @@ function App() {
     setCurrentQuestionIndex(0);
     setScore(0);
     setQuizEnded(false);
+    setUserAnswers([]);
   };
 
   return (
@@ -44,7 +59,7 @@ function App() {
       </header>
       <main>
         {quizEnded ? (
-          <Result score={score} totalQuestions={questions.length} onRestart={restartQuiz} />
+          <Result score={score} totalQuestions={questions.length} onRestart={restartQuiz} userAnswers={userAnswers} />
         ) : questions.length > 0 ? (
           <Question key={currentQuestionIndex} question={questions[currentQuestionIndex]} onAnswer={handleAnswer} />
         ) : (

@@ -28,6 +28,13 @@ const Question = ({ question, onAnswer }) => {
           />
         ))}
       </div>
+      {/* You can put this back later */}
+    {/*{isAnswered && (
+        <div className="explanation">
+          <h3>Explanation:</h3>
+          <p>{question.explanation}</p>
+        </div>
+      )}*/}
     </div>
   );
 };
