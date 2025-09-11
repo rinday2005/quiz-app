@@ -47,31 +47,21 @@ button.incorrect {
   background-color: red;
 }
 
-.result-header {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #1F2937;
-  background-color: #FFFFFF;
-  width: 50%;
-  margin: 10px auto;
-  padding: 10px;
-}
-
 .restart-quiz-button {
   background-color: #2563EB;
   color: white;
   border: none;
   padding: 10px 20px;
   text-align: center;
-  width:25%;
+  width:50%;
 }
 .review-header {
   font-size: 20px;
   margin-bottom: 10px;
   color: #1F2937;
   background-color: #FFFFFF;
-  width: 50%;
-  margin: 10px auto;
+  width: 95%;
+  margin: 5px auto;
   padding: 10px;
 }
 
