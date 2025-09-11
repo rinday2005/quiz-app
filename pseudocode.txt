@@ -1,0 +1,87 @@
+
+**Pseudocode for Quiz Website**
+
+**1. Data Structure (questions.json)**
+
+```json
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "question": "What is 2 + 2?",
+    "options": ["3", "4", "5", "6"],
+    "correctAnswer": "4"
+  }
+]
+```
+
+**2. App Component (App.js)**
+
+```javascript
+Component App
+  State:
+    questions = []
+    currentQuestionIndex = 0
+    score = 0
+    quizEnded = false
+
+  Lifecycle (on mount):
+    Fetch questions from "questions.json"
+    Set questions state
+
+  Function handleAnswer(selectedAnswer):
+    correctAnswer = questions[currentQuestionIndex].correctAnswer
+    If selectedAnswer is equal to correctAnswer:
+      Increment score
+    
+    nextQuestionIndex = currentQuestionIndex + 1
+    If nextQuestionIndex is less than questions.length:
+      Set currentQuestionIndex to nextQuestionIndex
+    Else:
+      Set quizEnded to true
+
+  Function restartQuiz():
+    Set currentQuestionIndex to 0
+    Set score to 0
+    Set quizEnded to false
+
+  Render:
+    If quizEnded is true:
+      Render Result component with score, totalQuestions, and restartQuiz function
+    Else if questions array is not empty:
+      Render Question component with questions[currentQuestionIndex] and handleAnswer function
+    Else:
+      Render "Loading..."
+```
+
+**3. Question Component (Question.js)**
+
+```javascript
+Component Question(question, onAnswer)
+  Render:
+    Display question.question text
+    For each option in question.options:
+      Render Answer component with option and onAnswer function
+```
+
+**4. Answer Component (Answer.js)**
+
+```javascript
+Component Answer(option, onAnswer)
+  Render:
+    Button with text option
+    On click, call onAnswer(option)
+```
+
+**5. Result Component (Result.js)**
+
+```javascript
+Component Result(score, totalQuestions, onRestart)
+  Render:
+    Display "Your score: " + score + " / " + totalQuestions
+    Button with text "Restart Quiz"
+    On click, call onRestart()
+```
