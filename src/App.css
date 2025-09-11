@@ -24,17 +24,17 @@ button {
   font-size: 16px;
   margin: 4px 5px;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
 }
 
 .answer-options {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   text-align: left;
   background-color: #FFFFFF;
   border-radius: 20px;
-  width: 50%;
+  width: 90%;
   margin: 5px auto;
   padding: 10px;
 }
