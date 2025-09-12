@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Who created Python?",
+    "options": ["Guido van Rossum", "Elon Musk", "Bill Gates", "Mark Zuckerberg"],
+    "correctAnswer": "Guido van Rossum",
+    "explanation": "Python was created by Guido van Rossum and was first released in 1991."
+  },
+  {
+    "question": "What keyword is used to create a variable in python?",
+    "options": ["var", "let", "const", "None"],
+    "correctAnswer": "None",
+    "explanation": "In Python, you simply assign a value to a variable name without using a keyword."
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
+    "correctAnswer": "Tokyo",
+    "explanation": "Tokyo is the capital city of Japan and one of the most populous cities in the world."
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "options": ["Harper Lee", "J.K. Rowling", "Stephen King", "George Orwell"],
+    "correctAnswer": "Harper Lee",
+    "explanation": "'To Kill a Mockingbird' was written by Harper Lee and published in 1960."
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Mars", "Jupiter", "Saturn", "Earth"],
+    "correctAnswer": "Jupiter",
+    "explanation": "Jupiter is the largest planet in our solar system by mass and volume."
+  },
+  {
+   "question": "Who is the current president of Nigeria?",
+    "options": ["Muhammadu Buhari", "Goodluck Jonathan", "Olusegun Obasanjo", "Bola Ahmed Tinubu"],
+    "correctAnswer": "Bola Ahmed Tinubu",
+    "explanation": "Bola Ahmed Tinubu is the current president of Nigeria."
+  }
+]

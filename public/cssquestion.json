@@ -1,0 +1,38 @@
+[
+  {
+    "question": "What is the Full meaning of CSS?",
+    "options": ["Cascading Style Sheets", "Computer Style Sheets", "Colorful Style Sheets", "Creative Style Sheets"],
+    "correctAnswer": "Cascading Style Sheets",
+    "explanation": "CSS stands for Cascading Style Sheets and is used for styling web pages."
+  },
+  {
+    "question": "How many ways are there to link a style sheet?",
+    "options": ["3", "4", "5", "6"],
+    "correctAnswer": "4",
+    "explanation": "There are four ways to link a style sheet: inline, internal, external, and using @import."
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
+    "correctAnswer": "Tokyo",
+    "explanation": "Tokyo is the capital city of Japan and one of the most populous cities in the world."
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "options": ["Harper Lee", "J.K. Rowling", "Stephen King", "George Orwell"],
+    "correctAnswer": "Harper Lee",
+    "explanation": "'To Kill a Mockingbird' was written by Harper Lee and published in 1960."
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Mars", "Jupiter", "Saturn", "Earth"],
+    "correctAnswer": "Jupiter",
+    "explanation": "Jupiter is the largest planet in our solar system by mass and volume."
+  },
+  {
+   "question": "Who is the current president of Nigeria?",
+    "options": ["Muhammadu Buhari", "Goodluck Jonathan", "Olusegun Obasanjo", "Bola Ahmed Tinubu"],
+    "correctAnswer": "Bola Ahmed Tinubu",
+    "explanation": "Bola Ahmed Tinubu is the current president of Nigeria."
+  }
+]
