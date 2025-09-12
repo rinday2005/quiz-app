@@ -17,7 +17,7 @@ function Quiz() {
     // Derive topic name from questionFile
     const topic = questionFile
       .replace('.json', '')
-      .replace('questions', ' Quiz')
+      .replace('question', ' Quiz')
       .split(' ')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
