@@ -28,7 +28,9 @@ button {
 }
 
 button:hover {
-  background-color: #F0F6FF;
+  background-color: #a1b7d8;
+  border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .answer-options {
@@ -59,6 +61,11 @@ button.incorrect {
   text-align: center;
   width:50%;
 }
+
+.restart-quiz-button:hover {
+  background-color: #1E40AF;
+}
+
 .review-header {
   font-size: 20px;
   margin-bottom: 10px;
