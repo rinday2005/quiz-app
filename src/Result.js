@@ -15,22 +15,22 @@ const Result = ({ score, totalQuestions, onRestart, userAnswers }) => {
 
       <hr />
       <div className="review-header">
-      <h3>Review your answers:</h3>
-      {userAnswers.map((answer, index) => (
-        <div key={index} className="question-review">
-          <p>
-            <strong>Question {index + 1}:</strong> {answer.question}
-          </p>
-          <p>
-            Your answer:{" "}
-            <span style={{ color: answer.isCorrect ? "green" : "red" }}>
-              {answer.selectedAnswer}
-            </span>
-          </p>
-          <p>Correct answer: {answer.correctAnswer}</p>
-          <p>Explanation: {answer.explanation}</p>
-        </div>
-      ))}
+        <h3>Review your answers:</h3>
+        {userAnswers.map((answer, index) => (
+          <div key={index} className="question-review">
+            <p>
+              <strong>Question {index + 1}:</strong> {answer.question}
+            </p>
+            <p>
+              Your answer:{" "}
+              <span style={{ color: answer.isCorrect ? "green" : "red" }}>
+                {answer.selectedAnswer}
+              </span>
+            </p>
+            <p>Correct answer: {answer.correctAnswer}</p>
+            <p>Explanation: {answer.explanation}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
